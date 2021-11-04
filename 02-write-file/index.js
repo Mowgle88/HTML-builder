@@ -1,3 +1,5 @@
+// node 02-files-in-folder
+
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
