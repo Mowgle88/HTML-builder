@@ -11,7 +11,6 @@ const text = path.join(__dirname, 'secret-folder');
   try {
     const files = await readdir(folder, {withFileTypes: true});
     for (const file of files) {
-      // console.log(file);
 
       let absolutePath = path.join(text, file.name);
       let basename = path.basename(file.name).replace(/\.\w*$/,'');
