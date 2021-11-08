@@ -8,9 +8,7 @@ const dirCopy = path.join(__dirname, 'files-copy')
 
 
 function copyFilesToFolder() {
-// в node.js v12 поменять на mkdir
-// в node.js v16 поменять на rm
-  fs.rm(dirCopy, function(err){
+  fs.mkdir(dirCopy, { recursive: true }, function(err){
     if (err) {
       console.log(err);
     } else {
